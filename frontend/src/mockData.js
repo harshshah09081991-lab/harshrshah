@@ -2,7 +2,7 @@ export const businessInfo = {
   name: "Harsh R Shah & Associates, Chartered Accountants",
   tagline: "Expert Tax & Compliance Solutions for Growing Businesses",
   phone: "+91-9510960227",
-  email: "contact@harshshah.ca",
+  email: "ca.hrshah@yahoo.com",
   whatsapp: "+91-9510960227",
   address: "B-408, World Trade Tower, Behind Skoda Showroom, SG Highway, Ahmedabad - 380051",
   experience: "12",
@@ -108,7 +108,7 @@ export const testimonials = [
   {
     id: 1,
     name: "Rajesh Patel",
-    company: "Patel Textiles Pvt Ltd",
+    company: "Textiles Industry",
     text: "Harsh and his team have been managing our GST and tax compliance for 3 years. Their proactive approach has saved us from penalties multiple times. Highly recommended!",
     rating: 5
   },
@@ -129,7 +129,7 @@ export const testimonials = [
   {
     id: 4,
     name: "Neha Desai",
-    company: "E-commerce Business Owner",
+    company: "E-commerce Business",
     text: "Managing GST for multi-state sales was complex. Their team simplified everything and ensures timely filing every month. Peace of mind is priceless!",
     rating: 5
   }
