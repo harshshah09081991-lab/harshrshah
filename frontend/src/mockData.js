@@ -11,6 +11,7 @@ export const businessInfo = {
   profileImage: "/harsh-shah-profile.png",
   founderName: "Harsh R Shah",
   qualification: "Chartered Accountant",
+  linkedin: "https://www.linkedin.com/in/cahrshah",
   detailedBio: {
     intro: "Harsh R Shah is a distinguished Chartered Accountant with over 12 years of proven expertise in taxation, audit, and comprehensive business advisory services. With a deep-rooted commitment to excellence and client success, Harsh has established himself as a trusted advisor for individuals, startups, and established enterprises across India.",
     expertise: "Specializing in complex GST compliance, income tax planning, statutory audits, and business structuring, Harsh brings a unique blend of technical mastery and practical business acumen to every engagement. His approach goes beyond mere compliance – he partners with clients to optimize tax positions, streamline financial operations, and drive sustainable business growth.",

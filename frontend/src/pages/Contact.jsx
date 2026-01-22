@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle, Linkedin } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -97,15 +97,15 @@ const Contact = () => {
 
             <Card className="border-slate-200 hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="w-6 h-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MessageCircle className="w-6 h-6 text-green-600" />
                 </div>
                 <h3 className="font-bold text-slate-900 mb-2">WhatsApp</h3>
                 <a 
                   href={`https://wa.me/${businessInfo.whatsapp.replace(/[^0-9]/g, '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-emerald-600 hover:text-emerald-700 font-medium"
+                  className="text-green-600 hover:text-green-700 font-medium"
                 >
                   Chat with us
                 </a>
@@ -114,13 +114,18 @@ const Contact = () => {
 
             <Card className="border-slate-200 hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-6 h-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Linkedin className="w-6 h-6 text-indigo-600" />
                 </div>
-                <h3 className="font-bold text-slate-900 mb-2">Office Hours</h3>
-                <p className="text-slate-600 text-sm">
-                  {businessInfo.officeHours}
-                </p>
+                <h3 className="font-bold text-slate-900 mb-2">LinkedIn</h3>
+                <a 
+                  href={businessInfo.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 hover:text-indigo-700 font-medium"
+                >
+                  Connect
+                </a>
               </CardContent>
             </Card>
           </div>

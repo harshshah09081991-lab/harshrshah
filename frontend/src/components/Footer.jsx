@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Linkedin } from 'lucide-react';
 import { businessInfo } from '../mockData';
 
 const Footer = () => {
@@ -99,6 +99,12 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">{businessInfo.officeHours}</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Linkedin className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                <a href={businessInfo.linkedin} target="_blank" rel="noopener noreferrer" className="text-sm hover:text-indigo-400 transition-colors">
+                  Connect on LinkedIn
+                </a>
               </li>
             </ul>
           </div>
