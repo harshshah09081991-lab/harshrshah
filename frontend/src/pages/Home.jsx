@@ -76,51 +76,49 @@ const Home = () => {
                 {/* Glow Effects */}
                 <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-[3rem] opacity-20 blur-2xl animate-pulse"></div>
                 
-                {/* Photo Container */}
-                <div className="relative glass-card rounded-[3rem] p-2 backdrop-blur-2xl">
+                {/* Photo Container - Clean without overlay */}
+                <div className="relative glass-card rounded-[3rem] p-2 backdrop-blur-2xl mb-6">
                   <div className="relative rounded-[2.5rem] overflow-hidden">
                     <img 
                       src={businessInfo.profileImage} 
                       alt={businessInfo.founderName}
                       className="w-full h-auto object-cover"
                     />
-                    {/* Overlay Gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent"></div>
-                    
-                    {/* Profile Info Badge */}
-                    <div className="absolute bottom-0 left-0 right-0 p-8">
-                      <div className="glass-card rounded-2xl p-6 backdrop-blur-xl border border-white/20">
-                        <h3 className="text-2xl font-bold text-white mb-1">{businessInfo.founderName}</h3>
-                        <p className="text-emerald-300 font-semibold text-lg mb-2">{businessInfo.qualification}</p>
-                        <p className="text-slate-300 text-sm leading-relaxed">
-                          {businessInfo.experience}+ years of transforming businesses through strategic tax advisory
-                        </p>
+                  </div>
+                </div>
+
+                {/* Profile Info Badge - Below Photo */}
+                <div className="glass-card rounded-2xl p-6 backdrop-blur-xl border border-white/20 mb-6">
+                  <h3 className="text-2xl font-bold text-white mb-1">{businessInfo.founderName}</h3>
+                  <p className="text-emerald-300 font-semibold text-lg mb-2">{businessInfo.qualification}</p>
+                  <p className="text-slate-300 text-sm leading-relaxed">
+                    {businessInfo.experience}+ years of transforming businesses through strategic tax advisory
+                  </p>
+                </div>
+
+                {/* Stats Grid - Below Profile Info */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-white/20">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
+                        <Users className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-white">500+</div>
+                        <div className="text-xs text-slate-300">Clients</div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Floating Stats */}
-                <div className="absolute -right-4 top-20 glass-card rounded-2xl p-4 backdrop-blur-xl animate-float hidden lg:block">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
-                      <Users className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-white">500+</div>
-                      <div className="text-xs text-slate-400">Happy Clients</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute -left-4 bottom-32 glass-card rounded-2xl p-4 backdrop-blur-xl animate-float hidden lg:block" style={{animationDelay: '2s'}}>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center">
-                      <Award className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-white">100%</div>
-                      <div className="text-xs text-slate-400">Success Rate</div>
+                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-white/20">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center">
+                        <Award className="w-6 h-6 text-white" />
+                      </div>
+                      <div>
+                        <div className="text-2xl font-bold text-white">100%</div>
+                        <div className="text-xs text-slate-300">Success</div>
+                      </div>
                     </div>
                   </div>
                 </div>
