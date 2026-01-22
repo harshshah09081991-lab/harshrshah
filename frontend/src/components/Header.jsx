@@ -31,14 +31,14 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
+      isScrolled ? 'bg-white/90 backdrop-blur-xl shadow-xl border-b border-slate-200' : 'bg-white/95 backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex flex-col">
-            <span className="text-xl font-bold text-slate-900">{businessInfo.name}</span>
-            <span className="text-xs text-emerald-600 font-medium">ICAI Member: {businessInfo.icaiNumber}</span>
+          <Link to="/" className="flex flex-col group">
+            <span className="text-xl font-black text-slate-900 group-hover:text-emerald-600 transition-colors">{businessInfo.name}</span>
+            <span className="text-xs text-emerald-600 font-bold tracking-wider">{businessInfo.experience}+ YEARS EXCELLENCE</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -62,7 +62,7 @@ const Header = () => {
           {/* Call Button */}
           <div className="hidden lg:flex items-center space-x-4">
             <a href={`tel:${businessInfo.phone}`}>
-              <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
+              <Button className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 rounded-xl">
                 <Phone className="w-4 h-4 mr-2" />
                 Call Now
               </Button>
