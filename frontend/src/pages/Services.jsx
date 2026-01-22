@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Calculator, ClipboardCheck, Building2, Scale, TrendingUp, CheckCircle2, ArrowRight } from 'lucide-react';
+import { FileText, Calculator, ClipboardCheck, Building2, Scale, TrendingUp, Lightbulb, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
